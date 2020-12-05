@@ -1,0 +1,55 @@
+
+<!-- style="opacityPreface:{{opacityPreface}};z-index:{{zIndex}}" -->
+<view class="background">
+    <image 
+        class="preface" 
+        src="../../jpg/login/loading.gif"
+        mode="widthFix"
+    >
+    </image>
+</view>
+
+<view style="opacity:{{contentOpacity}}"
+    class="content">
+    <view class="header" style="padding-top: {{cap_info.top}}px;" >
+        <view class="text"
+        style="margin-left:{{cap_info.height}}px;">
+        <span class="icon-locate locate iconfont"></span>    
+        接单面板
+        </view>
+    </view>
+    
+    
+    <view class="card1 card">
+        <view
+            wx:for="{{r}}"
+            wx:key="index"
+            class="rests transition "
+            
+            data-index="index"
+        >
+            <view class="preface">
+                <image class="image" src="{{item.rpreface}}" mode="scaleToFill"></image>
+            </view>
+            <view class="right">
+                <view class="name">{{item.rname}}</view>
+                <view class="left_">
+                    <view class="left__">
+                        <view class="price_sold">{{item.rtime}}</view>
+                    </view>
+                    <!-- 换成点赞图标 -->
+                    <view
+                        class="add iconfont icon-back"
+                        bindtap = "addTap"
+                    ></view>
+                </view>
+                
+            </view>
+
+        </view>
+
+    </view>
+</view>
+
+
+

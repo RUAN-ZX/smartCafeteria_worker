@@ -1,0 +1,172 @@
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: normal;
+    // color: var(--themeColor);
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.content{
+
+    .card{
+        background-color: var(--cardColor);
+        box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(0,0,0,0.21);
+        border-radius: 15rpx;
+        min-height: 200rpx;
+        z-index: 1;
+        position:relative;
+    }
+
+
+    transition: 0.3s opacity ease-out;
+    overflow: hidden;
+    .header{
+
+
+        position: relative;
+        z-index: 5;
+        
+        // margin-left: 20rpx;
+        padding: 10px;
+        width: 100%;
+        // margin-left: 0rpx;
+        text-align: left;
+        background-color: var(--themeColor);
+        .text{
+            color: var(--bgColor);
+            font-size: 20px;
+    
+        }
+    }
+    
+    
+    
+    
+    
+    
+    .index_swiper{
+        // margin-top:20rpx;
+        position:relative;
+        z-index: 1;
+        height: 200rpx;
+        margin: 30rpx;
+        border-radius: 15rpx;
+        // border-radius: 30rpx;
+        swiper{
+            border-radius: 15rpx;
+            width: 100%;
+            height: 200rpx;
+            // height: 260rpx;
+            // height: 100%;
+            display: block;
+            image{
+                border-radius: 15rpx;
+                // position: relative;
+                height: 200rpx;
+                // border-radius: 30rpx;
+                // height: 100%;
+                width: 100%;
+                display: block; //防止缝隙
+                
+                // vertical-align: top;
+                // height: 230rpx;
+            }
+        }
+    }
+    .card1{
+        padding: 10px;
+        margin: 0 10px 0 10px;
+        .rests{
+            border-bottom: 1px solid var(--lineColor);
+            // height: 0rpx;
+            // flex: 1;
+            padding: 15rpx;
+
+            display: flex;
+            flex-direction: row;
+            .preface{
+                flex: 1;
+                .image{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+            .right{
+                margin-left: 20rpx;
+                flex: 3;
+                text-align: left;
+                .name{
+                    font-weight: bolder;
+                    font-size: 35rpx;
+                    display: block;
+                    height: 40rpx;
+                    line-height: 40rpx;
+                }
+                .left_{
+                    
+                    font-weight: lighter;
+                    
+                    display: flex;
+                    flex-direction: row;
+                    // height: 50rpx;
+                    .left__{
+                        flex: 3;
+                        .price_sold{
+                            font-size: 12px;
+                            color: var(--labelColor);
+                            margin-bottom: 10rpx;
+                            .rmb{
+                                font-size: 12px;
+                                font-weight: bolder;
+                            }
+                        }
+                        .comment_wrapper{
+                            margin-bottom: 10rpx;
+                            background-color: var(--bgColor);
+                            padding: 0 5rpx 5rpx 5rpx;  
+                            display: inline-block;  
+                            border-radius: 10rpx;
+                            .comment{
+                                background-color: var(--bgColor);
+                                color: var(--themeColor);
+                                line-height: 25rpx;
+                                font-size: 25rpx;
+                                display: inline-block;
+                                height: 25rpx;
+    
+    
+                            }
+                        }
+                        
+                        .star{
+                            font-weight: bolder;
+                            color: var(--themeColor);
+                            font-size: 14px;
+                           
+                        }
+                    }
+                    .add{
+                        flex: 1;
+                        text-align: center;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+.background{
+    display:flex;
+    height: 100vh;                        //设置布局满屏
+    justify-content: center;
+    align-items:center;
+   position: fixed;
+    .preface{
+        
+        width:100%;
+    }
+}

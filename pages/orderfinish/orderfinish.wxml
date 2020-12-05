@@ -1,0 +1,55 @@
+<view class="background"></view>
+<view style="opacity:{{contentOpacity}}"
+    class="content">
+    <view class="header" style="padding-top: {{cap_info.top}}px;" >
+        <span class="iconfont icon-back backicon transition" bindtap = "backTap"></span>
+        
+        <span class="text"
+            style="margin-left:{{cap_info.height}}px;">    
+            本订单详情
+        </span>
+    </view>
+
+
+    <view class="foot">
+        <view class="account">
+
+        </view>
+        <view class="order transition" bindtap = "orderTap">
+            完成订单
+        </view>
+    </view>
+
+
+    <view class="menu card">
+        <view 
+            wx:for="{{menu}}" 
+            class="menu_"
+            wx:key="index"
+            data-index="{{index}}"
+        >   
+            <view class="src">
+                <image class="image" src="{{item.src}}" mode="scaleToFill"></image>
+            </view>
+            <view class="right">
+                <view class="name">{{item.name}}</view>
+                <view class="left_">
+                    <view class="left__">
+                        <!-- <view class="_star">★★★★★</view> -->
+                        <view class="_sold">×1</view>
+                        <!-- <view class="price"><span class="rmb">¥</span>{{item.price}}</view> -->
+                    
+                    </view>
+                </view>
+            </view>
+            <view class="right__">
+                <view class="price"><span class="rmb">¥</span>{{item.price}}</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="addphoto card transition"
+    bindtap = "addTap">
+        +
+    </view>
+</view>

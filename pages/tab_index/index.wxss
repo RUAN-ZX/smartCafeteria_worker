@@ -1,0 +1,132 @@
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.content {
+  transition: 0.3s opacity ease-out;
+  overflow: hidden;
+}
+.content .card {
+  background-color: var(--cardColor);
+  box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(0, 0, 0, 0.21);
+  border-radius: 15rpx;
+  min-height: 200rpx;
+  z-index: 1;
+  position: relative;
+}
+.content .header {
+  position: relative;
+  z-index: 5;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  background-color: var(--themeColor);
+}
+.content .header .text {
+  color: var(--bgColor);
+  font-size: 20px;
+}
+.content .index_swiper {
+  position: relative;
+  z-index: 1;
+  height: 200rpx;
+  margin: 30rpx;
+  border-radius: 15rpx;
+}
+.content .index_swiper swiper {
+  border-radius: 15rpx;
+  width: 100%;
+  height: 200rpx;
+  display: block;
+}
+.content .index_swiper swiper image {
+  border-radius: 15rpx;
+  height: 200rpx;
+  width: 100%;
+  display: block;
+}
+.content .card1 {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+}
+.content .card1 .rests {
+  border-bottom: 1px solid var(--lineColor);
+  padding: 15rpx;
+  display: flex;
+  flex-direction: row;
+}
+.content .card1 .rests .preface {
+  flex: 1;
+}
+.content .card1 .rests .preface .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.content .card1 .rests .right {
+  margin-left: 20rpx;
+  flex: 3;
+  text-align: left;
+}
+.content .card1 .rests .right .name {
+  font-weight: bolder;
+  font-size: 35rpx;
+  display: block;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.content .card1 .rests .right .left_ {
+  font-weight: lighter;
+  display: flex;
+  flex-direction: row;
+}
+.content .card1 .rests .right .left_ .left__ {
+  flex: 3;
+}
+.content .card1 .rests .right .left_ .left__ .price_sold {
+  font-size: 12px;
+  color: var(--labelColor);
+  margin-bottom: 10rpx;
+}
+.content .card1 .rests .right .left_ .left__ .price_sold .rmb {
+  font-size: 12px;
+  font-weight: bolder;
+}
+.content .card1 .rests .right .left_ .left__ .comment_wrapper {
+  margin-bottom: 10rpx;
+  background-color: var(--bgColor);
+  padding: 0 5rpx 5rpx 5rpx;
+  display: inline-block;
+  border-radius: 10rpx;
+}
+.content .card1 .rests .right .left_ .left__ .comment_wrapper .comment {
+  background-color: var(--bgColor);
+  color: var(--themeColor);
+  line-height: 25rpx;
+  font-size: 25rpx;
+  display: inline-block;
+  height: 25rpx;
+}
+.content .card1 .rests .right .left_ .left__ .star {
+  font-weight: bolder;
+  color: var(--themeColor);
+  font-size: 14px;
+}
+.content .card1 .rests .right .left_ .add {
+  flex: 1;
+  text-align: center;
+  font-size: 30px;
+}
+.background {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.background .preface {
+  width: 100%;
+}
